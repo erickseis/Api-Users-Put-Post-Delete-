@@ -23,7 +23,7 @@ function App() {
   }
 
   const addUsers = newUser =>{
-    alert('añadiendo')
+    // alert('añadiendo')
     axios.post('https://users-crud1.herokuapp.com/users/', newUser)
     .then(() => getUser())
     .catch((error) =>console.log(error.response));
