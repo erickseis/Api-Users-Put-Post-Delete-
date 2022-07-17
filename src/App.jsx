@@ -41,7 +41,7 @@ function App() {
   const deselectUser = () => setUserSelected(null)
 
   const updateUser = (userUpdate) =>{
-    alert('Actualizando');
+    // alert('Actualizando');
     axios.put(`https://users-crud1.herokuapp.com/users/${userUpdate.id}/`, userUpdate)
     .then(() => getUser())
     .catch(error=>console.log(error.response))

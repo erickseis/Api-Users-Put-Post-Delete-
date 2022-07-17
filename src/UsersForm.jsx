@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 
 const UsersForm = ({
     addUsers,
-    selectUser,
     updateUser,
     deselectUser,
     userSelected,
@@ -35,7 +34,7 @@ const UsersForm = ({
 
     const submit = (e) => {
         e.preventDefault();
-        alert("hice submit")
+        // alert("hice submit")
 
         const userForm = {
             first_name: firstName,
