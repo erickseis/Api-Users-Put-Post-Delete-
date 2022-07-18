@@ -54,7 +54,7 @@ console.log(userSelected)
   return (
     <div className="App">
 
-      <button className='modalBtn' onClick={()=> setOpenModal(true)}>Create User</button>
+      <button className='modalBtn' onClick={()=> setOpenModal(true)}> <i class="fa-solid fa-user-plus"></i> Create User</button>
       <UsersForm 
       userSelected={userSelected}
       addUsers={addUsers}

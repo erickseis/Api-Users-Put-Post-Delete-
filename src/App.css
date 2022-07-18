@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: #00fefe60;
+}
 
 .body {
     width: 100vw;
@@ -14,14 +19,17 @@
 .modalBtn {
     color: rgb(70, 67, 67);
     position: fixed;
+    top: 3%;
     left: 46%;
     padding: 12px 24px;
     border-radius: 5px 5px;
     border: transparent;
-    background-color: rgba(22, 209, 172, 0.778);
-    box-shadow: 2px 2px 2px 2px gray;
+    background-color: rgb(8, 93, 220);
+    box-shadow: 2px 2px 2px 2px rgb(4, 255, 255);
+    color: white;
 }
 .modalBtn:hover{
+    color: black;
     background-color: #2ef8a0;
     box-shadow: 2px 2px 2px 2px rgb(2, 255, 196);
 }
