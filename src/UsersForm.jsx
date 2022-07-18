@@ -72,7 +72,7 @@ const clear =()=>{
 
         <form onSubmit={submit}>
             <div className='container-form'>
-                <p onClick={onClose} className="closeBtn">X</p>
+                <p onClick={onClose} className="closeBtn"><i class="fa-solid fa-circle-xmark"></i></p>
 
                 <div className='input-container'>
                     <label htmlFor="firstName">First Name</label>
@@ -124,9 +124,9 @@ const clear =()=>{
                     />
                 </div>
 
-                <button className='created '>{userSelected !== null ? "Update" : "Create"}</button>
+                <button className='created '> <i class="fa-solid fa-user-pen"></i> {userSelected !== null ? "Update" : "Create"}</button>
                 {userSelected !== null && (
-                    <button className='clean' onClick={clear} type="button">Clear
+                    <button className='clean' onClick={clear} type="button"> <i class="fa-solid fa-user-xmark"></i> Clear
                     </button>
                 )}
             </div>

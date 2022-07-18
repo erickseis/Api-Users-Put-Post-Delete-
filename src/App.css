@@ -21,6 +21,10 @@
     background-color: rgba(22, 209, 172, 0.778);
     box-shadow: 2px 2px 2px 2px gray;
 }
+.modalBtn:hover{
+    background-color: #2ef8a0;
+    box-shadow: 2px 2px 2px 2px rgb(2, 255, 196);
+}
 
 .container-form {
     display: grid;
@@ -40,10 +44,18 @@
 input{
     border: none;
     border-bottom: 2px solid rgba(128, 128, 128, 0.492);
+    height: 25px;
+    width: 250px;
+    border-radius: 5px;
+    text-align: center;
 }
 input:hover{
     border: 2px solid #2ef8a0;
 }
+input:focus{
+    border: 2px solid #2ef8a0
+}
+
 .contenedor-padre{
     display: grid;
     place-items: center;
@@ -54,7 +66,7 @@ input:hover{
 margin-top: 6rem;    
 gap: 3rem;
 display: grid;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: 1fr;
 }
 
 .card{
@@ -78,12 +90,19 @@ ul{
     box-shadow: 2px 2px gray;
     margin-right: .5rem;
 }
+.clear:hover{
+    background-color: crimson;
+}
 .edit{
     background-color: #2ef8a0;
     width: 90px;
     height: 30px;
     border: none;
     box-shadow: 2px 2px gray;
+}
+
+.edit:hover{
+    background-color: #2eeef8;
 }
 .created{
     background-color: #2ef8a0;
@@ -92,6 +111,9 @@ ul{
     border: none;
     box-shadow: 2px 2px gray;
 }
+.created:hover{
+    background-color: #2eeef8;
+}
 
 .clean{
     background-color: #e17050;
@@ -99,4 +121,22 @@ ul{
     height: 30px;
     border: none;
     box-shadow: 2px 2px gray;
+}
+.clean:hover{
+    background-color: crimson;
+}
+.h1{
+    width:100% ;
+    height: 40px;
+    background-color: #e17050;
+    color: white;
+    font-size: 30px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+@media (min-width: 600px) { 
+    .card-container{
+       
+        grid-template-columns: 1fr 1fr;
+        }
 }
